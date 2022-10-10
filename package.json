@@ -1,0 +1,26 @@
+{
+  "name": "react-admin-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.js ",
+    "admin-dashboard": "npm start --prefix admin-dashboard",
+    "dev":"concurrently \"npm run server\" \"npm run admin-dashboard\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mai-rad98/React-admin-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mai-rad98/React-admin-dashboard/issues"
+  },
+  "homepage": "https://github.com/mai-rad98/React-admin-dashboard#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "json-server": "^0.17.0"
+  }
+}
